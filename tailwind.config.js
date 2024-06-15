@@ -52,6 +52,12 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundSize: {
+				'200%': '200%',
+				'350%': '350%',
+				'500%': '500%',
+				'1000%' : '1000%',
+			},
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -70,6 +76,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "gradient": 'gradient 15s linear infinite',
+        "sgradient": 'gradient 30s linear infinite',
+        "cursor": 'cursorblink 1.5s step-end infinite',
       },
     },
   },
