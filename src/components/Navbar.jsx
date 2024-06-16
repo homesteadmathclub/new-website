@@ -15,7 +15,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export function Navbar() {
   return (
     <nav className="list-none sticky top-0 z-50 w-full py-[0.5rem]">
-      <div className="container flex h-20 max-w-screen-2xl items-center">
+      <div className="container flex h-[10dvh] max-w-screen-2xl items-center">
         <div className="mr-4">
           <NavigationMenu className="flex space-x-2">
             <NavigationMenuItem className="mr-2 flex items-center justify-center">

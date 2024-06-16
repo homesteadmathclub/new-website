@@ -8,14 +8,15 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
+import { CarouselImageCard } from "@/components/CarouselImageCard";
 
 export default function Home() {
   return (
-    <main className="h-screen items-center justify-between pb-52 pt-32 pl-[18rem] pr-[16rem]">
-      <div className="w-full h-full text-sm grid grid-cols-[45%,15%,40%]">
+    <main className="min-h-[90dvh] w-[80%] mx-auto pt-[10dvh]">
+      <div className="w-full h-full text-sm grid grid-cols-[55%,10%,35%] items-center justify-center">
         <div className="flex flex-col gap-y-8 pt-10">
           <div className="flex items-end text-7xl font-bold">
             {config.club_name}
@@ -34,8 +35,8 @@ export default function Home() {
             )}
           </div>
         </div>
-        <div className="col-start-3">
-          <Carousel 
+        <div className="col-start-3 h-[75%] w-full">
+          <Carousel
             className="h-full w-full"
             plugins={[
               Autoplay({
@@ -50,27 +51,9 @@ export default function Home() {
             }}
           >
             <CarouselContent>
-              <CarouselItem>
-                <Card>
-                  <CardContent>
-                    Latest News
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card>
-                  <CardContent>
-                    Image 1
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-              <CarouselItem>
-                <Card>
-                  <CardContent>
-                    Image 2
-                  </CardContent>
-                </Card>
-              </CarouselItem>
+              <CarouselImageCard title="Latest News" />
+              <CarouselImageCard title="Image 1" imageURL="/placeholder2.png" />
+              <CarouselImageCard title="Image 2" imageURL="/placeholder3.png" />
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />

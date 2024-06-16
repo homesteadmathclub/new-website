@@ -1,6 +1,6 @@
-import {Navbar} from "@/components/Navbar.jsx"
+import { Navbar } from "@/components/Navbar.jsx";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata = {
   title: "HHS Club Website",
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex min-w-full max-w-full flex-col overflow-none scroll-smooth">
+      <body className="flex min-w-full max-w-full flex-col overflow-hidden scroll-smooth">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
