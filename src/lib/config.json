@@ -1,4 +1,6 @@
 {
 	"club_name": "Template Club",
-	"discord_url": "https://discord.gg/YOUR_SERVER_HERE"
+	"discord_url": "https://discord.gg/YOUR_SERVER_HERE",
+	"signup_form": "link to a form here",
+	"secondary_button_link": "link to something else here"
 }

@@ -14,7 +14,7 @@ export default function Err404() {
 					</h1>
 					<Button 
 						asChild
-						size="xl"
+						size="xl2"
 					>
 						<Link href="/">
 							Back to Home
