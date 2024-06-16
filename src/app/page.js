@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
   return (
@@ -34,7 +35,20 @@ export default function Home() {
           </div>
         </div>
         <div className="col-start-3">
-          <Carousel className="h-full w-full">
+          <Carousel 
+            className="h-full w-full"
+            plugins={[
+              Autoplay({
+                delay: 4500,
+                stopOnFocusIn: false,
+                playOnInit: true,
+                stopOnInteraction: false,
+              }),
+            ]}
+            opts={{
+              loop: true,
+            }}
+          >
             <CarouselContent>
               <CarouselItem>
                 <Card>
