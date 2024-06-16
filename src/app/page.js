@@ -2,6 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import config from "@/lib/config.js";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function Home() {
   return (
@@ -25,7 +33,35 @@ export default function Home() {
             )}
           </div>
         </div>
-        <div className="col-start-3">Probably a carousel here</div>
+        <div className="col-start-3">
+          <Carousel className="h-full w-full">
+            <CarouselContent>
+              <CarouselItem>
+                <Card>
+                  <CardContent>
+                    Latest News
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem>
+                <Card>
+                  <CardContent>
+                    Image 1
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem>
+                <Card>
+                  <CardContent>
+                    Image 2
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
       </div>
     </main>
   );
