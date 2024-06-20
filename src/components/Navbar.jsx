@@ -1,22 +1,30 @@
+'use client';
+
+import react from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import {
-	SheetTrigger,
-	SheetContent,
-	Sheet,
-	SheetClose,
-} from '@/components/ui/sheet';
-import { ModeToggle } from './ModeToggle';
-import { DiscordButton } from './DiscordButton';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { useRouter } from 'next/navigation';
 import config from '@/lib/config';
 
+import { cn } from '@/lib/utils';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import {
+	Sheet,
+	SheetClose,
+	SheetContent,
+	SheetTrigger,
+} from '@/components/ui/sheet';
+import { DiscordButton } from './DiscordButton';
+import { ModeToggle } from './ModeToggle';
+import { IoClose, IoMenu } from 'react-icons/io5';
+
 export function Navbar() {
+	const [open, setOpen] = react.useState(false);
 	return (
-		<header className='w-[100svw] bg-white/70 dark:bg-stone-950/70 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
+		<nav className='w-[100svw] bg-white/70 dark:bg-stone-950/70 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
 			<div className='container mx-auto flex h-16 items-center justify-between py-10'>
-				<div className='flex flex-row items-center w-full'>
-					<Link className='flex items-center gap-2' href='/'>
+				<div className='flex flex-row items-center w-full gap-2'>
+					<Link className='flex items-center gap-3' href='/'>
 						<Avatar className='size-10'>
 							<AvatarImage src='/logo.png' />
 							<AvatarFallback>HHS</AvatarFallback>
@@ -25,25 +33,28 @@ export function Navbar() {
 							{config.club_name}
 						</span>
 					</Link>
-					<nav className='hidden lg:flex items-start gap-4'>
-						<Link
-							className='text-sm font-medium hover:underline underline-offset-4'
-							href='/about'
-						>
-							About
-						</Link>
-						<Link
-							className='text-sm font-medium hover:underline underline-offset-4'
-							href='/officers'
-						>
-							Officers
-						</Link>
-						<Link
-							className='text-sm font-medium hover:underline underline-offset-4'
-							href='/meetings'
-						>
-							Meetings
-						</Link>
+					<nav className='hidden lg:flex items-start gap-1'>
+						<Button variant='ghost'>
+							<Link className='text-sm font-medium' href='/about'>
+								About
+							</Link>
+						</Button>
+						<Button variant='ghost'>
+							<Link
+								className='text-sm font-medium'
+								href='/officers'
+							>
+								Officers
+							</Link>
+						</Button>
+						<Button variant='ghost'>
+							<Link
+								className='text-sm font-medium'
+								href='/meetings'
+							>
+								Meetings
+							</Link>
+						</Button>
 					</nav>
 				</div>
 				<div>
@@ -51,14 +62,14 @@ export function Navbar() {
 						<DiscordButton />
 						<ModeToggle />
 					</div>
-					<Sheet>
+					<Sheet onOpenChange={setOpen} open={open}>
 						<SheetTrigger asChild>
 							<Button
 								className='lg:hidden'
 								size='icon'
 								variant='ghost'
 							>
-								<MenuIcon className='h-6 w-6' />
+								<IoMenu className='h-6 w-6' />
 								<span className='sr-only'>Toggle menu</span>
 							</Button>
 						</SheetTrigger>
@@ -66,11 +77,8 @@ export function Navbar() {
 							className='bg-white dark:bg-stone-950'
 							side='left'
 						>
-							<div className='flex items-center justify-between px-4 py-4'>
-								<Link
-									className='flex items-center gap-2'
-									href='#'
-								>
+							<div className='flex items-center justify-between py-4'>
+								<MobileLink onOpenChange={setOpen} href='/'>
 									<Avatar>
 										<AvatarImage src='/logo.png' />
 										<AvatarFallback>HHS</AvatarFallback>
@@ -78,89 +86,70 @@ export function Navbar() {
 									<span className='text-lg font-semibold'>
 										{config.club_name}
 									</span>
-								</Link>
+								</MobileLink>
+
 								<SheetClose>
 									<Button
 										className='lg:hidden'
 										size='icon'
 										variant='ghost'
 									>
-										<XIcon className='h-6 w-6' />
+										<IoClose className='h-6 w-6' />
 										<span className='sr-only'>
 											Close menu
 										</span>
 									</Button>
 								</SheetClose>
 							</div>
-							<nav className='grid gap-2 px-4 py-6'>
-								<Link
-									className='flex items-center gap-2 rounded-md py-2 px-3 text-sm font-medium hover:bg-stone-100 dark:hover:bg-stone-800'
-									href='/about'
-								>
-									About
-								</Link>
-								<Link
-									className='flex items-center gap-2 rounded-md py-2 px-3 text-sm font-medium hover:bg-stone-100 dark:hover:bg-stone-800'
-									href='/officers'
-								>
-									Officers
-								</Link>
-								<Link
-									className='flex items-center gap-2 rounded-md py-2 px-3 text-sm font-medium hover:bg-stone-100 dark:hover:bg-stone-800'
-									href='/meetings'
-								>
-									Meetings
-								</Link>
+							<nav className='flex flex-col h-[90%] justify-between'>
+								<div className='grid gap-2 py-6'>
+									<MobileLink
+										onOpenChange={setOpen}
+										href='/about'
+									>
+										About
+									</MobileLink>
+									<MobileLink
+										onOpenChange={setOpen}
+										href='/officers'
+									>
+										Officers
+									</MobileLink>
+									<MobileLink
+										onOpenChange={setOpen}
+										href='/meetings'
+									>
+										Meetings
+									</MobileLink>
+								</div>
+								<div className=' py-4 flex flex-row gap-2'>
+									<DiscordButton />
+									<ModeToggle />
+								</div>
 							</nav>
-							<div className='px-4 py-4'>
-								<DiscordButton />
-								<ModeToggle />
-							</div>
 						</SheetContent>
 					</Sheet>
 				</div>
 			</div>
-		</header>
+		</nav>
 	);
 }
 
-function MenuIcon(props) {
+function MobileLink({ href, onOpenChange, className, children, ...props }) {
+	const router = useRouter();
 	return (
-		<svg
+		<Link
+			href={href}
+			onClick={() => {
+				router.push(href.toString());
+				onOpenChange?.(false);
+			}}
+			className={cn(
+				'flex items-center gap-2 rounded-md py-2 px-3 text-lg font-medium hover:bg-stone-100 dark:hover:bg-stone-800'
+			)}
 			{...props}
-			xmlns='http://www.w3.org/2000/svg'
-			width='24'
-			height='24'
-			viewBox='0 0 24 24'
-			fill='none'
-			stroke='currentColor'
-			strokeWidth='2'
-			strokeLinecap='round'
-			strokeLinejoin='round'
 		>
-			<line x1='4' x2='20' y1='12' y2='12' />
-			<line x1='4' x2='20' y1='6' y2='6' />
-			<line x1='4' x2='20' y1='18' y2='18' />
-		</svg>
-	);
-}
-
-function XIcon(props) {
-	return (
-		<svg
-			{...props}
-			xmlns='http://www.w3.org/2000/svg'
-			width='24'
-			height='24'
-			viewBox='0 0 24 24'
-			fill='none'
-			stroke='currentColor'
-			strokeWidth='2'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		>
-			<path d='M18 6 6 18' />
-			<path d='m6 6 12 12' />
-		</svg>
+			{children}
+		</Link>
 	);
 }
