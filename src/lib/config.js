@@ -1,6 +1,6 @@
-const club_name = "Template Club";
-const discord_url = "https://discord.gg/YOUR_SERVER_HERE";
-const signup_form = "https://forms.google.com";
+const club_name = 'Template Club';
+const discord_url = 'https://discord.gg/YOUR_SERVER_HERE';
+const signup_form = 'https://forms.google.com';
 
 const home_page_description = `Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -11,19 +11,27 @@ const home_page_description = `Lorem ipsum dolor sit amet,consectetur adipiscing
             culpa qui officia deserunt mollit anim id est laborum.`;
 
 const home_page_secondary_button = {
-  display: true,
-  text: "Secondary Button",
-  url: "https://example.com",
+	display: true,
+	text: 'Secondary Button',
+	url: 'https://example.com',
 };
+
+const officer_team = [
+	{ name: 'Example Human', image: '/face1.png', role: 'Lead Idiot' },
+	{ name: 'Jonathan Doe', image: '/face2.png', role: 'I honestly dont know' },
+	{ name: 'Real Human Being', image: '/face3.png', role: 'Leader' },
+	{ name: 'Steve Jobs', image: '/face4.png', role: 'Who is Steve Jobs?' },
+];
 
 // *** DO NOT EDIT *** //
 const config = {
-  club_name: club_name,
-  discord_url: discord_url,
-  signup_form: signup_form,
-  home_page: {
-    description: home_page_description,
-    secondary_button: home_page_secondary_button,
-  },
+	club_name: club_name,
+	discord_url: discord_url,
+	signup_form: signup_form,
+	home_page: {
+		description: home_page_description,
+		secondary_button: home_page_secondary_button,
+	},
+	officer_team: officer_team,
 };
 export default config;
