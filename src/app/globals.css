@@ -72,15 +72,15 @@
 	}
 	body {
 		@apply bg-background text-foreground;
-		/* background-image: repeating-radial-gradient(
-				circle at 50% 0%,
-				transparent 0,
-				hsl(var(--background)) 9px
-			),
-			repeating-linear-gradient(
-				hsl(var(--background)),
-				hsl(var(--muted-foreground) / 4.5%)
-			);
+		background-image: repeating-radial-gradient(
+      circle at 50% 0%,
+      transparent 0,
+      hsl(var(--background)) 9px
+    ),
+    repeating-linear-gradient(
+      hsl(var(--background)),
+      hsl(var(--muted-foreground) / 4.5%)
+    );
 	}
 }
 
