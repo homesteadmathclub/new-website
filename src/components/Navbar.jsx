@@ -23,7 +23,7 @@ export function Navbar() {
 	return (
 		<nav className='w-[100svw] bg-white/70 dark:bg-stone-950/70 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
 			<div className='container mx-auto flex h-16 items-center justify-between py-10'>
-				<div className='flex flex-row items-center w-full gap-2'>
+				<div className='flex flex-row items-center w-full gap-3'>
 					<Link className='flex items-center gap-3' href='/'>
 						<Avatar className='size-10'>
 							<AvatarImage src='/logo.png' />
@@ -34,12 +34,12 @@ export function Navbar() {
 						</span>
 					</Link>
 					<nav className='hidden lg:flex items-start gap-1'>
-						<Button variant='ghost'>
+						<Button asChild variant='ghost'>
 							<Link className='text-sm font-medium' href='/about'>
 								About
 							</Link>
 						</Button>
-						<Button variant='ghost'>
+						<Button asChild variant='ghost'>
 							<Link
 								className='text-sm font-medium'
 								href='/officers'
@@ -47,7 +47,7 @@ export function Navbar() {
 								Officers
 							</Link>
 						</Button>
-						<Button variant='ghost'>
+						<Button asChild variant='ghost'>
 							<Link
 								className='text-sm font-medium'
 								href='/meetings'
