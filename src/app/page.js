@@ -31,11 +31,11 @@ export default function Home() {
 						{config.home_page.description}
 					</div>
 					<div className='flex gap-y-4 gap-x-8 flex-col sm:flex-row mx-auto lg:mx-0 w-full max-w-[87.5%]'>
-						<Button variant='default' size='xl'>
+						<Button asChild variant='default' size='xl'>
 							<a href={config.signup_form}>Sign up now!</a>
 						</Button>
 						{config.home_page.secondary_button.display && (
-							<Button variant='outline' size='xl'>
+							<Button asChild variant='outline' size='xl'>
 								<a href={config.home_page.secondary_button.url}>
 									{config.home_page.secondary_button.text}
 								</a>
