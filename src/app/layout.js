@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className='flex min-w-[100dvw] flex-col overflow-x-hidden scroll-smooth mx-auto'>
+			<body className='flex min-w-[100dvw] min-h-[100dvh] flex-col overflow-x-hidden scroll-smooth mx-auto'>
 				<ThemeProvider
 					attribute='class'
 					defaultTheme='system'

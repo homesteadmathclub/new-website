@@ -14,8 +14,8 @@ import {
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { DiscordButton } from './DiscordButton';
-import { ModeToggle } from './ModeToggle';
+import { DiscordButton } from './discord-button';
+import { ModeToggle } from './mode-toggle';
 import { IoClose, IoMenu } from 'react-icons/io5';
 
 export function Navbar() {

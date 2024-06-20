@@ -9,20 +9,28 @@ import {
 	CarouselPrevious,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { CarouselImageCard } from '@/components/CarouselImageCard';
+import { CarouselImageCard } from '@/components/carousel-image-card';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<main className='min-h-[90dvh] w-[85%] lg:w-[80%] mx-auto lg:pt-[10dvh]'>
-			<div className='w-full h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center'>
-				<div className='flex flex-col gap-y-8 pt-10'>
+		<main className='min-h-[90dvh]'>
+			{/* <Image
+				src='/placeholder3.png'
+				alt='drone shot of hhs'
+				width={800}
+				height={300}
+				className='w-full absolute -z-10 brightness-[.2] h-[50%] object-cover hero-image'
+			/> */}
+			<div className='h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[85%] lg:w-[80%] mx-auto pt-[5dvh] lg:pt-[5dvh]'>
+				<div className='flex flex-col gap-y-6 pt-10'>
 					<div className='flex items-end text-7xl font-bold'>
 						{config.club_name}
 					</div>
 					<div className='text-xl '>
 						{config.home_page.description}
 					</div>
-					<div className='flex gap-5 flex-col lg:flex-row'>
+					<div className='flex gap-y-4 gap-x-8 flex-col sm:flex-row mx-auto lg:mx-0 w-full max-w-[87.5%]'>
 						<Button variant='default' size='xl'>
 							<a href={config.signup_form}>Sign up now!</a>
 						</Button>
@@ -35,7 +43,7 @@ export default function Home() {
 						)}
 					</div>
 				</div>
-				<div className='col-start-3 h-[75%] w-full'>
+				<div className='col-start-3 h-[75%] w-full mt-8 lg:mt-0'>
 					<Carousel
 						className='h-full w-[85%] mx-auto lg:mx-0 lg:w-full'
 						plugins={[
