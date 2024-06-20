@@ -22,7 +22,7 @@ export default function Home() {
 				height={300}
 				className='w-full absolute -z-10 brightness-[.2] h-[50%] object-cover hero-image'
 			/> */}
-			<div className='h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[85%] lg:w-[80%] mx-auto pt-[5dvh] lg:pt-[5dvh]'>
+			<div className='h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[85%] lg:w-[80%] mx-auto pt-[5dvh] lg:pt-[7.5dvh]'>
 				<div className='flex flex-col gap-y-6 pt-10'>
 					<div className='flex items-end text-7xl font-bold'>
 						{config.club_name}
