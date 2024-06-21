@@ -21,7 +21,7 @@ import { IoClose, IoMenu } from 'react-icons/io5';
 export default function Navbar() {
 	const [open, setOpen] = react.useState(false);
 	return (
-		<nav className='z-50 w-[100svw] bg-white/80 dark:bg-stone-950/80 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
+		<nav className='z-50 w-[100svw] bg-white dark:bg-stone-950 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm'>
 			<div className='container mx-auto flex h-16 items-center justify-between py-10'>
 				<div className='flex flex-row items-center w-full gap-3'>
 					<Link className='flex items-center gap-3' href='/'>
