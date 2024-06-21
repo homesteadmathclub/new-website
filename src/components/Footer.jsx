@@ -20,7 +20,7 @@ export default function Footer() {
 						</Link>
 					</Button>
 					<Button asChild variant='ghost'>
-						<Link className='text-sm font-medium' href='/about'>
+						<Link className='text-sm font-medium' href='/#about'>
 							About
 						</Link>
 					</Button>
