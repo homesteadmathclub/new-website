@@ -80,8 +80,8 @@
     repeating-linear-gradient(
       hsl(var(--background)),
       hsl(var(--muted-foreground) / 4.5%)
-    );
-	} */
+    ); */
+	}
 }
 
 .hero-image {
