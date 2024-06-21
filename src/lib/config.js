@@ -1,5 +1,6 @@
 import general_config from '@/config/general';
 import home_config from '@/config/home';
+import officer_config from '@/config/officers';
 
 const meetings = {
 	info: `We meet every Tuesday during lunch in room X100 (Mr. Teacher's room).
@@ -16,8 +17,7 @@ const meetings = {
 const config = {
 	...general_config,
 	...home_config,
+	...officer_config,
 	meetings: meetings,
-	officer_team: officer_team,
-	officer_app: officer_app,
 };
 export default config;
