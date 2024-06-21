@@ -14,14 +14,14 @@ import {
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { DiscordButton } from './discord-button';
+import { DiscordButton, InstagramButton } from './social-media-buttons';
 import { ModeToggle } from './mode-toggle';
 import { IoClose, IoMenu } from 'react-icons/io5';
 
-export function Navbar() {
+export default function Navbar() {
 	const [open, setOpen] = react.useState(false);
 	return (
-		<nav className='w-[100svw] bg-white/70 dark:bg-stone-950/70 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
+		<nav className='w-[100svw] bg-white/80 dark:bg-stone-950/80 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
 			<div className='container mx-auto flex h-16 items-center justify-between py-10'>
 				<div className='flex flex-row items-center w-full gap-3'>
 					<Link className='flex items-center gap-3' href='/'>
@@ -59,6 +59,7 @@ export function Navbar() {
 				</div>
 				<div>
 					<div className='items-center gap-2 hidden lg:inline-flex'>
+						<InstagramButton />
 						<DiscordButton />
 						<ModeToggle />
 					</div>
@@ -123,6 +124,7 @@ export function Navbar() {
 									</MobileLink>
 								</div>
 								<div className=' py-4 flex flex-row gap-2'>
+									<InstagramButton />
 									<DiscordButton />
 									<ModeToggle />
 								</div>
