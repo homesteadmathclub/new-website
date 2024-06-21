@@ -21,9 +21,9 @@ export default function Meetings() {
 						</p>
 					</div>
 					<div className='col-start-2'>
-						<a href={config.meetings.image_link}>
+						<a href={config.meetings.link}>
 							<Image
-								src='/meetingimage.png'
+								src={config.meetings.image}
 								alt='Meeting Image'
 								width={1000}
 								height={1000}
