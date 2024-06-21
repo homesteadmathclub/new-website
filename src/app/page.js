@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<main className='min-h-[90dvh]'>
+		<main className='h-full mt-[2.5dvh] lg:-mt-[10dvh]'>
 			{/* <Image
 				src='/placeholder3.png'
 				alt='drone shot of hhs'
@@ -22,15 +22,15 @@ export default function Home() {
 				height={300}
 				className='w-full absolute -z-10 brightness-[.2] h-[50%] object-cover hero-image'
 			/> */}
-			<div className='h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[85%] lg:w-[80%] mx-auto pt-[5dvh] lg:pt-[7.5dvh]'>
-				<div className='flex flex-col gap-y-6 pt-10'>
+			<div className='h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[82.5%] lg:w-[80%] mx-auto'>
+				<div className='flex flex-col gap-y-6 pt-10 mx-auto'>
 					<div className='flex items-end text-7xl font-bold'>
 						{config.club_name}
 					</div>
 					<div className='text-xl '>
 						{config.home_page.description}
 					</div>
-					<div className='flex gap-y-4 gap-x-8 flex-col sm:flex-row mx-auto lg:mx-0 w-full max-w-[87.5%]'>
+					<div className='flex gap-y-4 gap-x-8 flex-col sm:flex-row mx-auto lg:mx-0 w-full '>
 						<Button asChild variant='default' size='xl'>
 							<a href={config.signup_form}>Sign up now!</a>
 						</Button>
@@ -43,7 +43,7 @@ export default function Home() {
 						)}
 					</div>
 				</div>
-				<div className='col-start-3 h-[75%] w-full mt-8 lg:mt-0'>
+				<div className='col-start-3 h-[75%] w-full mt-8 mb-8 lg:mt-0'>
 					<Carousel
 						className='h-full w-[85%] mx-auto lg:mx-0 lg:w-full'
 						plugins={[
