@@ -1,3 +1,5 @@
+//Configure colors in globals.css
+
 const club_name = 'Template Club';
 const discord_url = 'YOUR_SERVER_HERE'; // If none, keep it blank. Only include the code (Ex. dCqnBzeqUV)
 const instagram_handle = 'zuck'; // If none, keep it blank. Do not include an @ or a URL (Example of valid handle: 'zuck').
