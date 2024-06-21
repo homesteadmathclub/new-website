@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<main className='h-full mt-[2.5dvh] lg:-mt-[10dvh]'>
+		<main className='flex flex-col gap-y-12 h-full mt-[2.5dvh] lg:-mt-[10dvh]'>
 			{/* <Image
 				src='/placeholder3.png'
 				alt='drone shot of hhs'
@@ -22,7 +22,7 @@ export default function Home() {
 				height={300}
 				className='w-full absolute -z-10 brightness-[.2] h-[50%] object-cover hero-image'
 			/> */}
-			<div className='h-full text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[82.5%] lg:w-[80%] mx-auto'>
+			<div className='lg:mt-[10rem] text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[82.5%] lg:w-[80%] mx-auto'>
 				<div className='flex flex-col gap-y-6 pt-10 mx-auto'>
 					<div className='flex items-end text-7xl font-bold'>
 						{config.club_name}
@@ -73,6 +73,21 @@ export default function Home() {
 						<CarouselNext />
 					</Carousel>
 				</div>
+			</div>
+			<a name="about"></a>
+			<div className='text-sm items-center justify-center w-[70%] lg:w-[65%] mx-auto pt-[5dvh] lg:pt-[5dvh] mb-12'>
+				<div className='m-auto text-center justify-center flex-col'>
+					<h1 className='font-bold text-5xl mb-5'>About Us</h1>
+					<h2 className='font-bold text-3xl mb-10'>
+						Hey! Welcome to {config.club_name}!
+					</h2>
+				</div>
+				{config.about_sections.map((obj) => (
+					<>
+						<h3 className='font-bold text-3xl mb-5'>{obj.title}</h3>
+						<p className='mb-10 text-lg'>{obj.content}</p>
+					</>
+				))}
 			</div>
 		</main>
 	);

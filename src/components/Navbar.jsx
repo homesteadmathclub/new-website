@@ -21,7 +21,7 @@ import { IoClose, IoMenu } from 'react-icons/io5';
 export default function Navbar() {
 	const [open, setOpen] = react.useState(false);
 	return (
-		<nav className='w-[100svw] bg-white/80 dark:bg-stone-950/80 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
+		<nav className='z-50 w-[100svw] bg-white/80 dark:bg-stone-950/80 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm backdrop-blur-3xl'>
 			<div className='container mx-auto flex h-16 items-center justify-between py-10'>
 				<div className='flex flex-row items-center w-full gap-3'>
 					<Link className='flex items-center gap-3' href='/'>
@@ -35,7 +35,7 @@ export default function Navbar() {
 					</Link>
 					<nav className='hidden lg:flex items-start gap-1'>
 						<Button asChild variant='ghost'>
-							<Link className='text-sm font-medium' href='/about'>
+							<Link className='text-sm font-medium' href='/#about'>
 								About
 							</Link>
 						</Button>
@@ -106,7 +106,7 @@ export default function Navbar() {
 								<div className='grid gap-2 py-6'>
 									<MobileLink
 										onOpenChange={setOpen}
-										href='/about'
+										href='/#about'
 									>
 										About
 									</MobileLink>
