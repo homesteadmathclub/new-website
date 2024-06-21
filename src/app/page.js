@@ -74,7 +74,7 @@ export default function Home() {
 					</Carousel>
 				</div>
 			</div>
-			<a name="about"></a>
+			<a name='about'></a>
 			<div className='text-sm items-center justify-center w-[70%] lg:w-[65%] mx-auto pt-[5dvh] lg:pt-[5dvh] mb-12'>
 				<div className='m-auto text-center justify-center flex-col'>
 					<h1 className='font-bold text-5xl mb-5'>About Us</h1>
@@ -82,11 +82,11 @@ export default function Home() {
 						Hey! Welcome to {config.club_name}!
 					</h2>
 				</div>
-				{config.about_sections.map((obj) => (
-					<>
+				{config.about_sections.map((obj, index) => (
+					<div key={index}>
 						<h3 className='font-bold text-3xl mb-5'>{obj.title}</h3>
 						<p className='mb-10 text-lg'>{obj.content}</p>
-					</>
+					</div>
 				))}
 			</div>
 		</main>
