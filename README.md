@@ -1,4 +1,5 @@
 # HHS Club Template
+A highly customizeable club template for Homestead High School clubs. 
 
 ## Customization
 
