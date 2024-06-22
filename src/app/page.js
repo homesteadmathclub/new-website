@@ -59,15 +59,16 @@ export default function Home() {
 						}}
 					>
 						<CarouselContent>
-							<CarouselImageCard title='Latest News' />
-							<CarouselImageCard
-								title='Image 1'
-								imageURL='/placeholder2.png'
-							/>
-							<CarouselImageCard
-								title='Image 2'
-								imageURL='/placeholder3.png'
-							/>
+							{config.home_page.carousel.map(
+								(carousel, index) => (
+									<CarouselImageCard
+										key={index}
+										title={carousel.name}
+										description={carousel.description}
+										imageURL={carousel.image}
+									/>
+								)
+							)}
 						</CarouselContent>
 						<CarouselPrevious />
 						<CarouselNext />
