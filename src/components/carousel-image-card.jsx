@@ -2,11 +2,7 @@ import { Card, CardFooter } from '@/components/ui/card';
 import { CarouselItem } from '@/components/ui/carousel';
 import Image from 'next/image';
 
-export function CarouselImageCard({
-	imageURL = '/placeholder.png',
-	title = 'Lorem Ipsum',
-	description = 'Aute deserunt elit enim est cillum. Nulla consectetur nostrud nulla voluptate sit eiusmod pariatur ad. Velit dolore fugiat voluptate enim non nostrud elit culpa pariatur aliquip ad.',
-}) {
+export function CarouselImageCard({ imageURL, title, description }) {
 	return (
 		<CarouselItem>
 			<Card className='flex flex-col items-start justify-between gap-4 h-full rounded-md'>
