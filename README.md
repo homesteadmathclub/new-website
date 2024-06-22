@@ -15,7 +15,7 @@ Replace the placeholder information with your club's information.
 
 #### `club_name`
 
--   Name of the club
+-   Name of the club. (Ex. "HHS Template Club")
 
 #### `club_email`
 
@@ -126,6 +126,7 @@ Replace the placeholder information with your club's information.
 #### `resources_sections`
 
 -   The different sections of the resources section
+-   Important links or short bits of information go here in bulleted lists.
 -   Each section is created using the following format:
     -   `title` - the title of the section
     -   `content` - the content of the section (a list of links)
