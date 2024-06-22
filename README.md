@@ -119,13 +119,9 @@ Replace the placeholder information with your club's information.
 
 ## Resources Page ([src/config/resources.js](/src/config/resources.js)):
 
-#### `club_contact_email`
-
--   An email for people to contact the club
-
 #### `resources_sections`
 
--   The different sections of the resources section
+-   The different sections of the resources page
 -   Each section is created using the following format:
     -   `title` - the title of the section
     -   `content` - the content of the section (a list of links)
