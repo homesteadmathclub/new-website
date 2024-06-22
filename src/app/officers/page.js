@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Officers() {
 	return (
-		<main className='min-h-[90dvh] w-[85%] lg:w-[80%] mx-auto pt-[5dvh] lg:pt-[5dvh] flex items-center flex-col pb-16'>
+		<main className='min-h-[90dvh] w-[85%] lg:w-[80%] mx-auto pt-[5dvh] flex items-center flex-col pb-16'>
 			<h1 className='mx-auto font-bold text-5xl mb-10'>Officer Team</h1>
 			<section className='flex flex-wrap gap-x-10 gap-y-6 w-[90%] justify-between mx-auto mb-16'>
 				{config.officer_team.map((officer, index) => {
@@ -31,12 +31,12 @@ export default function Officers() {
 				})}
 			</section>
 			{config.officer_app.display && (
-				<section className='text-center lg:text-left flex flex-col items-center justify-center'>
+				<section className='text-center flex flex-col items-center justify-center'>
 					<h2 className='mx-auto font-bold text-3xl mb-5'>
 						Officer Application
 					</h2>
 					{config.officer_app.open ? (
-						<div className='flex flex-col lg:max-w-[60%]'>
+						<div className='flex flex-col md:max-w-[60%]'>
 							<p className='text-stone-300 text-lg pb-4'>
 								{config.officer_app.open_text}
 							</p>
@@ -51,7 +51,7 @@ export default function Officers() {
 							</Button>
 						</div>
 					) : (
-						<p className='text-lg font-medium text-stone-300 pb-10'>
+						<p className='text-lg font-medium text-stone-300 pb-10 md:w-[60%]'>
 							{config.officer_app.closed_text}
 						</p>
 					)}

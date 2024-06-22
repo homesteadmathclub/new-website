@@ -6,7 +6,7 @@ export default function Resources() {
 	return (
 		<main className='min-h-[90dvh] w-[85%] lg:w-[50%] mx-auto pt-[5dvh] lg:pt-[5dvh] flex flex-col pb-16'>
 			<div className='text-center items-center justify-center flex-col'>
-				<h1 className='font-bold text-5xl mb-5'>Resources</h1>
+				<h1 className='font-bold text-5xl mb-10'>Resources</h1>
 				<h1 className='font-bold text-3xl mb-10'>
 					Our email: {' '}
 					<a className='hover:underline text-blue-600 dark:text-blue-500' href={'mailto:' + config.club_contact_email}>

@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export default function Meetings() {
 	return (
-		<main className='min-h-[80dvh] grid flex-col gap-y-[10rem]'>
-			<div className='h-full text-sm items-center justify-center w-[75%] lg:w-[70%] mx-auto pt-[5dvh] lg:pt-[5dvh]'>
+		<main className='min-h-[80dvh] grid flex-col gap-y-[10rem] pb-10 md:pb-0'>
+			<div className='h-full text-sm items-center justify-center w-[75%] lg:w-[70%] mx-auto pt-[5dvh]'>
 				<div className='m-auto text-center justify-center flex-col'>
 					<h1 className='font-bold text-5xl mb-5'>Meetings</h1>
 					<h1 className='font-bold text-3xl mb-12'>When & Where?</h1>
