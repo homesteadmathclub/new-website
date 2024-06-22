@@ -125,3 +125,6 @@ Replace the placeholder information with your club's information.
 -   Each section is created using the following format:
     -   `title` - the title of the section
     -   `content` - the content of the section (a list of links)
+
+> [!NOTE]
+> If any help is needed, file an issue on this repository and we will get back to you as soon as possible!

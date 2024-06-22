@@ -10,18 +10,10 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { CarouselImageCard } from '@/components/carousel-image-card';
-import Image from 'next/image';
 
 export default function Home() {
 	return (
 		<main className='flex flex-col gap-y-12 h-full mt-[2.5dvh] lg:-mt-[10dvh]'>
-			{/* <Image
-				src='/placeholder3.png'
-				alt='drone shot of hhs'
-				width={800}
-				height={300}
-				className='w-full absolute -z-10 brightness-[.2] h-[50%] object-cover hero-image'
-			/> */}
 			<div className='lg:mt-[10rem] text-sm lg:grid lg:grid-cols-[55%,10%,35%] items-center justify-center w-[82.5%] lg:w-[80%] mx-auto'>
 				<div className='flex flex-col gap-y-6 pt-10 mx-auto'>
 					<div className='flex items-end text-7xl font-bold'>
@@ -78,7 +70,7 @@ export default function Home() {
 			{config.display_about && (
 				<>
 					<a name='about'></a>
-					<div className='text-sm items-center justify-center w-[70%] lg:w-[65%] mx-auto pt-[5dvh] lg:pt-[5dvh] mb-12'>
+					<div className='text-sm items-center justify-center w-[70%] lg:w-[65%] mx-auto pt-[5dvh] mb-12'>
 						<div className='m-auto text-center justify-center flex-col'>
 							<h1 className='font-bold text-5xl mb-5'>
 								About Us
