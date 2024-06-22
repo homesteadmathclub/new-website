@@ -60,6 +60,14 @@ export default function Navbar() {
 								Meetings
 							</Link>
 						</Button>
+						<Button asChild variant='ghost'>
+							<Link
+								className='text-sm font-medium'
+								href='/resources'
+							>
+								Resources
+							</Link>
+						</Button>
 					</nav>
 				</div>
 				<div>
@@ -128,6 +136,12 @@ export default function Navbar() {
 										href='/meetings'
 									>
 										Meetings
+									</MobileLink>
+									<MobileLink
+										onOpenChange={setOpen}
+										href='/resources'
+									>
+										Resources
 									</MobileLink>
 								</div>
 								<div className=' py-4 flex flex-row gap-2'>

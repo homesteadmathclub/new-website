@@ -116,3 +116,16 @@ Replace the placeholder information with your club's information.
     -   `open_text` - text that is shown when the application is open
     -   `closed_text` - text that is shown when the application is closed
     -   `link` - a link to the officer application, which is displayed as a button
+
+## Resources Page ([src/config/resources.js](/src/config/resources.js)):
+
+#### `club_contact_email`
+
+-   An email for people to contact the club
+
+#### `resources_sections`
+
+-   The different sections of the resources section
+-   Each section is created using the following format:
+    -   `title` - the title of the section
+    -   `content` - the content of the section (a list of links)
