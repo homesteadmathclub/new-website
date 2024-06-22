@@ -4,7 +4,7 @@ import config from '@/lib/config.js';
 
 export default function Resources() {
 	return (
-		<main className='min-h-[90dvh] w-[85%] lg:w-[50%] mx-auto pt-[5dvh] lg:pt-[5dvh] flex flex-col pb-16'>
+		<main className='min-h-[90dvh] w-[72.5%] lg:w-[50%] mx-auto pt-[5dvh] lg:pt-[5dvh] flex flex-col pb-16'>
 			<div className='text-center items-center justify-center flex-col mb-10'>
 				<h1 className='font-bold text-5xl mb-5'>Resources</h1>
 				<h2 className='font-bold text-3xl'>Our email:</h2>
