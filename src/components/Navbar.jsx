@@ -34,14 +34,16 @@ export default function Navbar() {
 						</span>
 					</Link>
 					<nav className='hidden lg:flex items-start gap-1'>
-						<Button asChild variant='ghost'>
-							<Link
-								className='text-sm font-medium'
-								href='/#about'
-							>
-								About
-							</Link>
-						</Button>
+						{config.about_sections && (
+							<Button asChild variant='ghost'>
+								<Link
+									className='text-sm font-medium'
+									href='/#about'
+								>
+									About
+								</Link>
+							</Button>
+						)}
 						<Button asChild variant='ghost'>
 							<Link
 								className='text-sm font-medium'
@@ -107,12 +109,14 @@ export default function Navbar() {
 							</div>
 							<nav className='flex flex-col h-[90%] justify-between'>
 								<div className='grid gap-2 py-6'>
-									<MobileLink
-										onOpenChange={setOpen}
-										href='/#about'
-									>
-										About
-									</MobileLink>
+									{config.about_sections && (
+										<MobileLink
+											onOpenChange={setOpen}
+											href='/#about'
+										>
+											About
+										</MobileLink>
+									)}
 									<MobileLink
 										onOpenChange={setOpen}
 										href='/officers'

@@ -19,11 +19,16 @@ export default function Footer() {
 							Home
 						</Link>
 					</Button>
-					<Button asChild variant='ghost'>
-						<Link className='text-sm font-medium' href='/#about'>
-							About
-						</Link>
-					</Button>
+					{config.about_sections && (
+						<Button asChild variant='ghost'>
+							<Link
+								className='text-sm font-medium'
+								href='/#about'
+							>
+								About
+							</Link>
+						</Button>
+					)}
 					<Button asChild variant='ghost'>
 						<Link className='text-sm font-medium' href='/officers'>
 							Officers
