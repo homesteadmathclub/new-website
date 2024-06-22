@@ -17,6 +17,14 @@ Replace the placeholder information with your club's information.
 
 -   Name of the club. (Ex. "HHS Template Club")
 
+#### `club_website_description`
+
+-   Club website description
+
+#### `club_icon`
+
+-   Icon of the club
+
 #### `club_email`
 
 -   Club email

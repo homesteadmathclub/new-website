@@ -26,8 +26,8 @@ export default function Navbar() {
 				<div className='flex flex-row items-center w-full gap-3'>
 					<Link className='flex items-center gap-3' href='/'>
 						<Avatar className='size-10'>
-							<AvatarImage src='/logo.png' />
-							<AvatarFallback>HHS</AvatarFallback>
+							<AvatarImage src={config.club_icon} />
+							<AvatarFallback>{config.club_name}</AvatarFallback>
 						</Avatar>
 						<span className='text-lg font-semibold'>
 							{config.club_name}
@@ -94,8 +94,10 @@ export default function Navbar() {
 							<div className='flex items-center justify-between py-4'>
 								<MobileLink onOpenChange={setOpen} href='/'>
 									<Avatar>
-										<AvatarImage src='/logo.png' />
-										<AvatarFallback>HHS</AvatarFallback>
+										<AvatarImage src={config.club_icon} />
+										<AvatarFallback>
+											{config.club_name}
+										</AvatarFallback>
 									</Avatar>
 									<span className='text-lg font-semibold'>
 										{config.club_name}
