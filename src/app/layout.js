@@ -2,10 +2,22 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import config from '@/lib/config';
 
 export const metadata = {
-	title: 'HHS Club Website',
-	description: 'Template website for various clubs at Homestead High School',
+	title: `${config.club_name} Website`,
+	description: config.club_website_description,
+	openGraph: {
+		title: config.club_name,
+		description: config.club_website_description,
+		type: 'website',
+		images: [
+			{
+				url: config.club_icon,
+				alt: config.club_name,
+			},
+		],
+	},
 };
 
 export default function RootLayout({ children }) {
