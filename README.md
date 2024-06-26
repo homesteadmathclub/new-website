@@ -7,7 +7,6 @@ A highly customizable club website template for Homestead High School clubs.
 > [!IMPORTANT]
 > All images **MUST** be put in the [public](/public) folder!  
 > If the image is in the public folder, simply just put a forward-slash ("/") and the name of the image to use it.
-> Edit all the files in the [src/config](/src/config/) folder.
 
 Replace the placeholder information with your club's information.
 
