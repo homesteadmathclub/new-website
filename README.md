@@ -41,8 +41,8 @@ Replace the placeholder information with your club's information.
 
 -   Club Instagram handle (Ex. "zuck")
 -   If your club does not have an instagram, keep the string empty
-    > [!NOTE]
-    > For both the `discord_url` and the `instagram_handle`, do not include any part of the URL (https://discord.gg/ for Discord or https://instagram.com/ for Instagram)
+> [!NOTE]
+> For both the `discord_url` and the `instagram_handle`, do not include any part of the URL (https://discord.gg/ for Discord or https://instagram.com/ for Instagram)
 
 ## Home Page ([src/config/home.js](/src/config/home.js)):
 
