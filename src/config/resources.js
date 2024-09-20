@@ -3,19 +3,18 @@
 
 const resources_sections = [
 	{
-		title: 'Section 1',
+		title: 'Problems',
 		content: [
-			'https://example.org/',
-			'https://example.org/',
-			'https://example.org/',
+			{link: 'https://drive.google.com/file/d/1ZJOKOtC6NA5OWt4e5KXnDxicbUQlbW0L/view', text: "Sequences and Series"},
+			{link: 'https://drive.google.com/file/d/1eGfaIkZJMvAV6Fmd8635sJEJLeQ3PDUm/view', text: "Polynomials"},
+			{link: 'https://drive.google.com/file/d/1RUY-1OQn06Id6MUGivtJg0BGugcAb18q/view', text: "Combinatorics"},
 		],
 	},
 	{
-		title: 'Section 2',
+		title: 'Useful Websites',
 		content: [
-			'https://example.com/',
-			'https://example.com/',
-			'https://example.com/',
+			{link: 'https://artofproblemsolving.com/', text: "AoPS"},
+			{link: 'https://drive.google.com/file/d/1vmm99U7K9cA58zVhDcLVBG-gxLYeFcdO/view', text: "HHS Campus Map"},
 		],
 	},
 ];

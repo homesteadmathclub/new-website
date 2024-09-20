@@ -5,44 +5,16 @@ const display_about = true;
 
 const about_sections = [
 	{
-		title: 'Section 1',
-		content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.`,
+		title: 'What do we do at Math Club?',
+		content: `We do fun math activities, contest preparation, competitions, guest lectures, and more. 
+You can expect activities like guts rounds, ARML-style contests, mock teams rounds, and math games. 
+Contests include AMC 10/12, AIME, BMT, and SMT. Come to our meetings every other Monday during lunch in B103. Bring your friends!`,
 	},
 	{
-		title: 'Section 2',
-		content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.`,
-	},
-	{
-		title: 'Section 3',
-		content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.`,
-	},
-	{
-		title: 'Section 4',
-		content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.`,
+		title: 'Speakers at our club',
+		content: `At our meetings you can expect HHS teachers, students, and external speakers providing interesting and interactive talks about math.
+            For example, during the 2023-2024 school year, we had a former math teacher give an interesting talk relating gerrymandering to math.
+            Any club member can give a short talk about math! If you are interested in giving a talk, fill out the google form linked via the "Speaker form" button above. `,
 	},
 ];
 
