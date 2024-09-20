@@ -8,7 +8,7 @@ const club_website_description =
 
 const club_icon = '/logo.png';
 
-const club_email = 'homesteadmathclub@mail.com';
+const club_email = 'homesteadmathclub@gmail.com';
 
 const signup_form = 'https://forms.gle/RSyCzrjpsMJ8qxhb8';
 
