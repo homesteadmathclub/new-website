@@ -9,7 +9,7 @@ export default function Resources() {
 				<h1 className='font-bold text-5xl mb-5'>Resources</h1>
 				<h2 className='font-bold text-3xl'>Our email:</h2>
 				<a
-					className='text-2xl md:text-3xl md:font-bold font-semibold hover:underline text-blue-600 dark:text-blue-500 mx-auto'
+					className='text-lg md:text-2xl lg:text-3xl md:font-bold font-semibold hover:underline text-blue-600 dark:text-blue-500 mx-auto'
 					href={'mailto:' + config.club_email}
 				>
 					{config.club_email}

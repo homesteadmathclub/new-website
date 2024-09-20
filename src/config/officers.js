@@ -7,7 +7,7 @@ const officer_team = [
 	{ name: 'Luke Wang', role: 'Web Master / Outreach Director / Secretary / Treasurer', image: '/luke.png' },
 	{ name: 'Rohan Bodke', role: 'Activities Director', image: '/placeholder.png' },
 	{ name: 'Jeremy Gu', role: 'Activities Director', image: '/placeholder.png' },
-	{ name: 'Garret Cai', role: 'Competitions Director', image: '/placeholder.png' },
+	{ name: 'Garret Cai', role: 'Competitions Director', image: '/garrett.png' },
 ];
 
 const officer_app = {
