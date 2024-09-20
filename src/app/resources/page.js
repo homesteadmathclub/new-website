@@ -20,8 +20,8 @@ export default function Resources() {
 					<h2 className='font-bold text-3xl mb-5'>{obj.title}</h2>
 					{obj.content.map((link, index2) => 
 						<li className='mb-4 text-lg' key={index2 + 'a'}>
-							<a className='hover:underline text-blue-600 dark:text-blue-500' target='_blank' href={link}>
-								{link}
+							<a className='hover:underline text-blue-600 dark:text-blue-500' target='_blank' href={link.link}>
+								{link.text}
 							</a>
 						</li>
 					)}

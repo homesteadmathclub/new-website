@@ -1,20 +1,20 @@
 // ** For more information on how to edit the config, please read the README.md ** //
 // https://github.com/underscorelior/HHS-Club-Template?tab=readme-ov-file#general-club-info-srcconfiggeneraljs
 
-const club_name = 'Template Club';
+const club_name = 'Homestead Math Club';
 
 const club_website_description =
-	'Template website for various clubs at Homestead High School';
+	'A math community at Homestead High School. Join Math Club to participate in fun math activities and competitions. Contest preparation, guest lectures, games, and more!';
 
 const club_icon = '/logo.png';
 
-const club_email = 'example@mail.com';
+const club_email = 'homesteadmathclub@mail.com';
 
-const signup_form = 'https://forms.google.com';
+const signup_form = 'https://forms.gle/RSyCzrjpsMJ8qxhb8';
 
-const discord_url = 'dCqnBzeqUV';
+const discord_url = 'QfXcnJdDvA';
 
-const instagram_handle = 'zuck';
+const instagram_handle = 'hhs_math_club';
 
 // *** DO NOT EDIT *** //
 const general_config = {

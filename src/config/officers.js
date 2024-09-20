@@ -2,18 +2,19 @@
 // https://github.com/underscorelior/HHS-Club-Template?tab=readme-ov-file#officers-page-srcconfigofficersjs
 
 const officer_team = [
-	{ name: 'Example Human', role: 'Event Manager', image: '/face1.png' },
-	{ name: 'Jonathan Doe', role: 'I honestly dont know', image: '/face2.png' },
-	{ name: 'Real Human Being', role: 'Leader', image: '/face3.png' },
-	{ name: 'Steve Jobs', role: 'Chief Steve Officer', image: '/face4.png' },
-	{ name: 'Example Human', role: 'Web Master', image: '/face1.png' },
+	{ name: 'Aarush Khare', role: 'President', image: '/aarush.png' },
+	{ name: 'Peter Ferolito', role: 'Vice President', image: '/peter.png' },
+	{ name: 'Luke Wang', role: 'Web Master / Outreach Director / Secretary / Treasurer', image: '/luke.png' },
+	{ name: 'Rohan Bodke', role: 'Activities Director', image: '/placeholder.png' },
+	{ name: 'Jeremy Gu', role: 'Activities Director', image: '/placeholder.png' },
+	{ name: 'Garret Cai', role: 'Competitions Director', image: '/placeholder.png' },
 ];
 
 const officer_app = {
 	display: true,
-	open: true,
+	open: false,
 	open_text:
-		'Our officer applications are open until 12/12/1212! Aliquip magna non laboris amet irure fugiat reprehenderit laboris labore non anim.',
+		'Our officer applications are now open!',
 	closed_text:
 		"Our officer applications aren't open yet! Wait until officer applications open.",
 	link: 'https://forms.google.com/',

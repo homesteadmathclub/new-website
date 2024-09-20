@@ -23,7 +23,7 @@ export default function Officers() {
 							<h1 className='text-xl font-medium mt-2'>
 								{officer.name}
 							</h1>
-							<p className='text-stone-700 dark:text-stone-400 text-base font-light'>
+							<p className='text-cyan-900 dark:text-cyan-100 text-base font-light'>
 								{officer.role}
 							</p>
 						</div>
@@ -37,7 +37,7 @@ export default function Officers() {
 					</h2>
 					{config.officer_app.open ? (
 						<div className='flex flex-col md:max-w-[60%]'>
-							<p className='text-stone-700 dark:text-stone-300 text-lg pb-4'>
+							<p className='text-cyan-900 dark:text-cyan-100 text-lg pb-4'>
 								{config.officer_app.open_text}
 							</p>
 							<Button
@@ -51,7 +51,7 @@ export default function Officers() {
 							</Button>
 						</div>
 					) : (
-						<p className='text-lg font-medium text-stone-700 dark:text-stone-300 pb-10 md:w-[60%]'>
+						<p className='text-lg font-medium text-cyan-900 dark:text-cyan-100 pb-10 md:w-[60%]'>
 							{config.officer_app.closed_text}
 						</p>
 					)}

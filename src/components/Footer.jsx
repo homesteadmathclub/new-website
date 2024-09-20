@@ -11,7 +11,7 @@ import {
 
 export default function Footer() {
 	return (
-		<footer className='bg-background/90 py-6 md:py-6 w-full border-t-[1px] border-stone-900 flex items-center justify-center'>
+		<footer className='bg-background/90 py-6 md:py-6 w-full border-t-[1px] border-cyan-900 flex items-center justify-center'>
 			<div className='container md:max-w-[90%] flex flex-col items-center justify-between gap-4 md:flex-row mx-auto'>
 				<nav className='md:flex items-center grid gap-x-8 md:gap-4 grid-cols-2'>
 					<Button asChild variant='ghost'>

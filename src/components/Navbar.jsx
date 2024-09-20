@@ -21,7 +21,7 @@ import { IoClose, IoMenu } from 'react-icons/io5';
 export default function Navbar() {
 	const [open, setOpen] = react.useState(false);
 	return (
-		<nav className='z-50 w-[100svw] bg-white dark:bg-stone-950 border-b-[1px] border-stone-900 sticky top-0 rounded-b-sm'>
+		<nav className='z-50 w-[100svw] bg-white dark:bg-cyan-950 border-b-[1px] border-cyan-900 sticky top-0 rounded-b-sm'>
 			<div className='container mx-auto flex h-16 items-center justify-between py-10'>
 				<div className='flex flex-row items-center w-full gap-3'>
 					<Link className='flex items-center gap-3' href='/'>
@@ -88,7 +88,7 @@ export default function Navbar() {
 							</Button>
 						</SheetTrigger>
 						<SheetContent
-							className='bg-white dark:bg-stone-950'
+							className='bg-white dark:bg-cyan-950'
 							side='left'
 						>
 							<div className='flex items-center justify-between py-4'>
@@ -170,7 +170,7 @@ function MobileLink({ href, onOpenChange, className, children, ...props }) {
 				onOpenChange?.(false);
 			}}
 			className={cn(
-				'flex items-center gap-2 rounded-md py-2 px-3 text-lg font-medium hover:bg-stone-100 dark:hover:bg-stone-800'
+				'flex items-center gap-2 rounded-md py-2 px-3 text-lg font-medium hover:bg-cyan-100 dark:hover:bg-cyan-800'
 			)}
 			{...props}
 		>

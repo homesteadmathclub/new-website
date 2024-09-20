@@ -1,41 +1,29 @@
 // ** For more information on how to edit the config, please read the README.md ** //
 // https://github.com/underscorelior/HHS-Club-Template?tab=readme-ov-file#about-section-srcconfigaboutjs
 
-const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.`;
+const description = `HHS's community of mathematicians. We provide an innovative and supportive atmosphere where people can share their passion for math.`;
 
 const secondary_button = {
 	display: true,
-	text: 'Secondary Button',
-	url: 'https://example.com',
+	text: 'Speaker form',
+	url: 'https://forms.gle/gcWdrpNTeTBykWyw6',
 };
 
 const carousel = [
 	{
+		name: 'One of Our Many Meetings',
+		description: `I wonder what they are up to. Probably math.`,
+		image: '/meetingimage.png',
+	},
+	{
 		name: 'Latest News',
-		description: `Aute deserunt elit enim est cillum. 
-			Nulla consectetur nostrud nulla voluptate sit eiusmod pariatur ad. 
-			Velit dolore fugiat voluptate enim non nostrud elit culpa pariatur aliquip ad.`,
+		description: `Our second general meeting is on 9/23/24! Make sure to come to B103 during lunch!`,
 		image: '/placeholder.png',
 	},
 	{
-		name: 'Image 1',
-		description: `Aute deserunt elit enim est cillum. 
-			Nulla consectetur nostrud nulla voluptate sit eiusmod pariatur ad. 
-			Velit dolore fugiat voluptate enim non nostrud elit culpa pariatur aliquip ad.`,
-		image: '/placeholder2.png',
-	},
-	{
-		name: 'Image 2',
-		description: `Aute deserunt elit enim est cillum. 
-			Nulla consectetur nostrud nulla voluptate sit eiusmod pariatur ad. 
-			Velit dolore fugiat voluptate enim non nostrud elit culpa pariatur aliquip ad.`,
-		image: '/placeholder3.png',
+		name: 'An Old Club Photo',
+		description: `We've been at Homestead for a while.`,
+		image: '/mathclubphoto.png',
 	},
 ];
 
