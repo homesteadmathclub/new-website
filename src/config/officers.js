@@ -5,7 +5,7 @@ const officer_team = [
 	{ name: 'Aarush Khare', role: 'President', image: '/aarush.png' },
 	{ name: 'Peter Ferolito', role: 'Vice President', image: '/peter.png' },
 	{ name: 'Luke Wang', role: 'Web Master / Outreach Director / Secretary / Treasurer', image: '/luke.png' },
-	{ name: 'Rohan Bodke', role: 'Activities Director', image: '/placeholder.png' },
+	{ name: 'Rohan Bodke', role: 'Activities Director', image: '/rohan.png' },
 	{ name: 'Jeremy Gu', role: 'Activities Director', image: '/jeremy.png' },
 	{ name: 'Garret Cai', role: 'Competitions Director', image: '/garrett.png' },
 ];

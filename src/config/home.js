@@ -17,7 +17,7 @@ const carousel = [
 	},
 	{
 		name: 'Latest News',
-		description: `Our second general meeting is on 9/23/24! Make sure to come to B103 during lunch!`,
+		description: `Our next general meeting is on 11/04/24! Make sure to come to B103 during lunch!`,
 		image: '/placeholder.png',
 	},
 	{
