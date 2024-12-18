@@ -17,7 +17,7 @@ const carousel = [
 	},
 	{
 		name: 'Latest News',
-		description: `Our next general meeting is on 11/04/24! Make sure to come to B103 during lunch!`,
+		description: `Out on break! Math club meetings will resume in January when school begins again.`,
 		image: '/placeholder.png',
 	},
 	{
