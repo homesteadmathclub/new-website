@@ -17,7 +17,7 @@ const carousel = [
 	},
 	{
 		name: 'Latest News',
-		description: `Out on break! Math club meetings will resume in January when school begins again.`,
+		description: `Happy 2025! The first few Math Club meetings this year will be on 1/13, 1/27, and 2/10.`,
 		image: '/placeholder.png',
 	},
 	{
